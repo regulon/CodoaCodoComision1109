@@ -1,89 +1,51 @@
-/*Estructura de css 
-selector{ 
-    propiedad:valor
-}
-*/
+*{
+    margin:0;
+    padding:0;
+    }
 body{
     background-color: rgb(220, 183, 255);
 }
 h1,h2{
-    text-align: center;
+    text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header{
-    background-image: url('../img/header.jpg');
-    height: 150px;
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    width: 80%;
-    top: 0px;
-    margin-left: 10%;
+   background: url(https://i.ytimg.com/vi/0LTzCmT0IsE/maxresdefault.jpg)
+   center center; background-size:cover;height:340px;width: 100%;
+   display:flex; justify-content:left;text-shadow: 2px 2px #fff;
 }
-header h1{
-    background-color: rgba(255, 255, 255, 0.616);
-    padding: 10px;
-    width: 300px;
-    height: 50px;
+nav{background-color: white;
+    height: 0px;
+    position: absolute;/*para regresar al menú se retrocede la página*/
+    top: 50px;
+    left:50px;
 }
-nav {
-    background-color: transparent;
-    height: 50px;
-    position: fixed;
-    top: 0px;
-    left: 50px;
+div.plato{
+color:orange;
+background:transparent;
 }
-nav ol li{
-    background-color: rgb(44, 43, 43);
-    display: inline;
-    color: white;
-    padding: 15px;
-    margin: 0px 10px;
-}
-article{
-   padding-top: 100px;
-   background: linear-gradient(rgba(255, 0, 0, 0.411),rgba(255, 255, 0, 0.52));
-    width: 80%;
-   margin-left: 10%;
-}
-article #casera{
-    background: linear-gradient(rgba(0, 128, 0, 0.424)0, 128, 0, 0.527),rgba(255, 255, 0, 0.582));
-}
+div.plato:hover{color:#5C33F6;font-size:23px}
 
-nav ol li a{
-    text-decoration: none;
-    color: white;
+.plato li{
+    display: inline; 
 }
-nav ol li:hover{
-    background-color: rgba(44, 43, 43, 0.418);
-    color: black;
-    box-shadow: 5px 3px 5px black;
-}
-nav ol li a:hover{
-    color: black;
-}
-.rojo{
-    background-color: red;
-    width: 25%;
-    height: 300px;
-    color: yellow;
-    font-size: 25px;
-    margin: 5px;
-}
-#negro{
-    background-color: black;
-    color: white;
-}
-#principal{
-    display: flex;
-    justify-content: center;
-}
-main{
-    /* width: 80%; */
-}
-h4 font{
+div .mplato{list-style: none;}
+a{	background-color:rgba(0,255,0,0.2);width:10px;height:10px;
+	transition: background-color .5s;color:white;}
 
-    color: black !important;
+a:hover{color:gold;font-size:22px;background-color:red}
+
+.plato{
+  display: online;
+  justify-content: space-around;
+  align-items: center;
 }
-h4 font{
-    color: blue;
+article{padding:10px 20px;
+    background: rgba(36, 20, 0, 0.164);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.055) 10%, rgba(27, 27, 138, 0.171) 35%, rgba(0,212,255,1) 100%);
+}
+ul li,ol li{list-style:none;}
+
+#zanahoria{padding:30px;font-size:20px; margin-top: 5px;margin-bottom: 5px;
+    background: rgb(101, 94, 236);
+background: linear-gradient(90deg, rgba(161, 224, 15, 0.527) 0%, rgba(28, 245, 82, 0.685) 35%, rgba(255, 0, 157, 0.233) 100%);
 }

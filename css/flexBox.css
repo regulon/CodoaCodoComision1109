@@ -1,43 +1,45 @@
 #justify,#otra{
     display: flex;
-   /*justify-content: center;para centrar los hijos*/
-  /* justify-content: flex-end; para posisicionar al final*/
- /* justify-content: flex-start; el que viene por defecto */
-    /* justify-content: space-around; */
+    /* justify-content: center; para centrar los hijos*/
+    /* justify-content: flex-end; para posicionar al final */
+    /* justify-content: flex-start; para posicionar al inicio, se podría omitir ya que es la ubicación por defecto */
+    /* justify-content: space-around;  */
     justify-content: space-between;
     /* justify-content: space-evenly; */
+
 }
 .primer{
     /* width: 150px;
     height: 150px; */
-    width: 25%;
+    width: 30%;
 
     background-color: blueviolet;
-    /* float: left; */
+    /* float: left;   */
 }
-.primer:after{
-    content: 'Este es depués de el contenido';
+.primer::after{
+    content: "Esto es después del contenido";
     color: white;
     font-size: 20px;
 }
 .primer::before{
-    content: "esto es para antes del contenido";
-    color: yellow;
+    content: "Esto es para antes del contenido";
+    color:yellow;
+    font-size: 20px;
 }
 .primer::first-letter{
-    color: blue;
-    font-size: 30px;
+    color:blue;
+    font-size: 20px;
 }
 .blue{
     background-color: blue;
 }
 li{
-    display: inline;
+    display:inline;
 }
 span{
     display: block;
 }
 .principal{
-    display:flex;
-    flex-wrap: wrap;
+    display: flex;
 }
+    
