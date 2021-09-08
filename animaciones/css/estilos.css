@@ -5,8 +5,8 @@ i{
     color: darkblue;
 }
 @keyframes mover {
-    from{top: 115px;px;}
-    to{top:250px;color:darkred}
+    from{top: 115px;}
+    to{top:250px;color:darkred;}
 }
 #flecha{
     position:absolute;
@@ -29,9 +29,9 @@ i{
     to{opacity: 1;}
 }
 @keyframes otra{
-    0%{color:brown}
+    0%{color:brown;}
     25%{color: yellow;}
-    50%{color:green}
+    50%{color:green;}
 }
 ul li{
     display: inline;
