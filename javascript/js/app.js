@@ -34,9 +34,10 @@ alert("Hola Mundo") /*ventana emergente*/
         if(25 < 32 || 12 > 20){ /*se cumple una de las condiciones*/
             console.log("se cumplió la condición")
         }
-        let saludo = "Hola, ¿Cómo estás?"
+        let saludo = "Hola, ¿Cómo estás? "
         let saludar = saludo + nombre;
 
         let elemento = document.getElementById("principal");
         // console.log(elemento)
         elemento.innerHTML = "<h1 class='text-center bg-info'>" + saludar + "</h1>";
+        document.write("<div class='container'><div class='row' id='principal'><h1 class='text-center bg-info'>" + saludar +"</h1></div></div>");
