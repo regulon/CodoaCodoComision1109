@@ -34,6 +34,10 @@ nav img{
 	position: relative;
 	left: 70px;
 }
+header .oradores{
+	position:relative;
+	top: 768px;
+}
 nav .container-fluid h5{
 	position: relative;
 	color: white;
@@ -41,10 +45,12 @@ nav .container-fluid h5{
 }
 #header-background{
 	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 759px;
-	background: url(../img/ba1g.jpg);
+	background-size:cover;
+	width:100%;
+	height:768px;
+	background: url(../img/ba1\ 1366x768px.jpg);
+	background-position: center center;
+	background-color: #464646;
 }
 header .contenedor .encima{
 	display:block;
