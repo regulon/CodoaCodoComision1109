@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/estilos.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <title>Trabajo integrador</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(41, 41, 41);">
     <div class="container-fluid ">
       <a class="navbar-brand text-white" href="#"><img src="./img/codoacodo.png" alt="" width="130" height="auto" class="d-inline-block align-text-center">
         Conf Bs As
@@ -45,22 +45,22 @@ Irigoyen 272, C1072 C1072AAF, Buenos Aires, Argentina." id="lugar">El lugar y la
           </li>
           
           <li class="nav-item">
-            <a class="nav-link text-info" aria-current="page" href="https://www.buenosaires.gob.ar/educacion/codo-codo"><span id="ticket"> Comprar tickets</span></a>
+            <a class="nav-link text-success" aria-current="page" href="https://www.buenosaires.gob.ar/educacion/codo-codo"><span id="ticket";> Comprar tickets</span></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
     <header>
-        <div class="container-fluid container1 oscurecer" style="color: white;">
+        <div class="container-fluid oscurecer" style="color: white;">
             <div class="row">
-                <div class="col-5"></div>
-                <div class="col-sm-7 col-lg-7">
-                    <h3 style="color: white;" id="conf"> Conf Bs As</h3><p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los
+                <div class="col-sm col-lg"></div>
+                <div class="col-sm col-lg">
+                    <h3 style="color: white;" id="conf"> Conf Bs As</h3><p id="descripcion">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los
                     expertos que están cambiando el futuro del internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los orodores de primer nivel que tenemos para ti.
                     Te esperamos!. </p>
                     <button type="button" class="btn btn-outline-light" style="margin-top: 2%;" href="#ora">Quiero ser orador</button>
-                    <button type="button" class="btn btn-info" style="margin-top: 2%;"><span style="color: white;" href="https://www.buenosaires.gob.ar/educacion/codo-codo">Comprar tickets</span></button>
+                    <button type="button" class="btn btn-info" style="margin-top: 2%; background-color:rgb(51, 162, 51); ;"><span style="color: white;" href="https://www.buenosaires.gob.ar/educacion/codo-codo">Comprar tickets</span></button>
                 </div>
             </div>
         </div>
@@ -115,8 +115,8 @@ Irigoyen 272, C1072 C1072AAF, Buenos Aires, Argentina." id="lugar">El lugar y la
     </article>
     <article>
       <div class="container-fluid mt-3 ps-0">
-        <div class="row d-flex">
-          <div class="col-sm g-0">
+        <div class="row d-flex gap-0 p-0 fa-line-height:0;">
+          <div class="col-lg">
             <div class="container justify-content-center">
               <div id="carousel-1" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -142,7 +142,7 @@ Irigoyen 272, C1072 C1072AAF, Buenos Aires, Argentina." id="lugar">El lugar y la
               </div>
             </div>
           </div>
-          <div class="col-sm bg-dark g-0 ps-3" id="reseña" style="color: white; padding-top: 15px">
+          <div class="col-lg bg-dark g-0 ps-3" id="reseña" style="color: white; padding-top: 15px">
             <h1 id="titureseña" style="font: size 1rem;">Bs As - Octubre</h1><p  style="font: size 1rem;"> Aires es la provincia y la localidad más grande del estado de Argentina. Honolulu es la más sureña de entre las principales 
             ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han 
             formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
@@ -181,7 +181,7 @@ Irigoyen 272, C1072 C1072AAF, Buenos Aires, Argentina." id="lugar">El lugar y la
     <div class="container mt-2">
       <div class="row">
         <div class="d-grid col-8 mx-auto">
-          <button class="btn btn-danger" type="button">Enviar</button>
+          <button class="btn btn-success" type="button" style="background-color: rgb(150, 211, 27);"><span style="color: white;">Enviar</span></button>
         </div>
         </div>
       </div>
@@ -233,12 +233,10 @@ Irigoyen 272, C1072 C1072AAF, Buenos Aires, Argentina." id="lugar">El lugar y la
   </article>
     
     
-    
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
   <script src="./libs/bootstrap/dist/js/bootstrap.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  
 </body>
 </html>
