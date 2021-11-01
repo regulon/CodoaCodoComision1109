@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #fcfcfc;
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+} 
+  li:hover #ticket{
+      color:rgb(206, 252, 0);
+  }
+
+  li:hover #conviertete{
+    color: white;
+  }
+
+  li:hover #lugar{
+    color: white;
+  }
+
+  li:hover #losora{
+    color: white;
+  }
+
+  li:hover #conferencia{
+    color: gold;
+  }
+
+  .formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #formulario{
+    text-align: center;
+  }
+  
+  
