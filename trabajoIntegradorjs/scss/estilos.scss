@@ -1,0 +1,251 @@
+///////////////////////////
+// 1. Patrones de colores
+//////////////////////////
+$principal: rgb(125, 175, 23);
+$butonticket: rgb(51, 162, 51);
+$primary:  #182f4d;
+$secondary:rgb(56, 51, 51);
+
+////////////////////////////////////////
+// 2. Modificando variables de bootstrap
+////////////////////////////////////////
+$secondary:$secondary;
+$primary:$primary;
+$info:$butonticket;
+$danger:$principal;
+$enable-shadows:true;
+$enable-gradients:true;
+$btn-padding-y:.5rem;
+$btn-padding-x:1rem;
+$btn-border-radius:.3rem;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  header{
+    // position: absolute;
+    background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.282)
+    ),
+     url(../img/ba1.jpg);
+    background-color: rgba(126, 126, 126, 0.844);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 600px;
+    padding-top: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+   }
+  
+  .container1{
+    position:relative;
+    top:10%;
+    right:5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align:end;
+    
+  }
+
+  #titureseña{
+    font-size: 14px;
+  }
+
+  #reseña{
+    font-size: 12px;
+    padding-left: 2%;
+    padding-right: 4%;
+    text-align:justify;
+  }
+  figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+    color:aqua;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+  }
+  #logo{
+    
+    justify-items: end;
+    vertical-align: center;
+  
+  }
+  #menu{
+    vertical-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header{
+        background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.282)
+    ),
+    url(../img/ba1.jpg);
+    background-color: rgba(126, 126, 126, 0.844);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 768px;
+    margin-top: 0%;
+   }
+  .container1{
+    position:relative;
+    top:8%;
+    padding-left: 5%;
+    text-align:end;
+  }
+  figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+    color:aqua;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.282)
+    ),
+    url(../img/ba1.jpg);
+    background-color: rgba(126, 126, 126, 0.844);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 768px;
+    margin-top: 0%;
+   }
+  .container1{
+    position:relative;
+    top:40%;
+    right:7.5%;
+    text-align:end;
+    padding-left:10%;
+  }
+}
+
+// @media only screen and (min-width: 992px) {
+//   header{
+//     background-image: 
+//     linear-gradient(
+//       rgba(0, 0, 0, 0.35),
+//       rgba(0, 0, 0, 0.282)
+//     ),
+//     url(../img/ba1.jpg);
+//     background-color: rgba(126, 126, 126, 0.844);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size:cover;
+//     width:100%;
+//     height: 768px;
+//     margin-top: 0%;
+//   }
+//   .container1{
+//     position:relative;
+//     top:30%;
+//     right:7.5%;
+//     text-align:end;
+//     padding-left:30%;
+//   }
+// }
+
+@media only screen and (min-width: 992px) {
+  header{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.282)
+    ),
+    url(../img/ba1.jpg);
+    background-color: rgba(126, 126, 126, 0.844);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 768px;
+    margin-top: 0%;
+  }
+  .container1{
+    position:relative;
+    top:45.5%;
+    right:7.5%;
+    text-align:end;
+    padding-left:30%;
+  }
+  figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+    color:aqua;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+  }
+  .nav-link:hover{
+  
+    color: blue;
+    
+  }
+  .btn{
+    color: white;
+  }
+  #logo{
+  display:flex;
+    vertical-align: center;
+  left:100px;
+}
+#menu{
+  display:flex;
+  // justify-items: end;
+  vertical-align: center;
+  padding-top: 10px;
+  left:25%;
+}
+li:hover #ticket{
+	color:rgb(206, 252, 0);
+}
+li:hover #conviertete{
+  color: white;
+}
+li:hover #lugar{
+  color: white;
+}
+li:hover #losora{
+  color: white;
+}
+li:hover #conferencia{
+  color: gold;
+}
+}
+
+
