@@ -1,4 +1,4 @@
-package InfoUsuario;
+package ejerciciosObligatorios;
 
 import java.util.Scanner;
 /**
