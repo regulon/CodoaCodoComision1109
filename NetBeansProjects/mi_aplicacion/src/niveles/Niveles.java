@@ -10,16 +10,24 @@ package niveles;
  * @author Regulo R Luna Aponte
  */
 public class Niveles {
-    public String dificultad;
+    private String dificultad;
     public String experiencia;
-    public String checkpoint;
-    public Niveles(String dificultad, String experiencia, String checkpoint){
-         this.dificultad=dificultad;
-         this.experiencia=experiencia;
-         this.checkpoint=checkpoint;
-        
+    public String checkPoint;
+    public Niveles(String experiencia,String checkPoint){
+        this.experiencia=experiencia;
+        this.checkPoint=checkPoint;
+    }
+
+    public String getDificultad() {
+        return dificultad;
+    }
+
+    public void setDificultad(String dificultad) {
+        this.dificultad = dificultad;
     }
     public String reiniciar(){
-        return this.checkpoint;
+        return "Estamos en el nivel: " + this.checkPoint;
     }
+    
+    
 }
