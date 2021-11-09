@@ -10,7 +10,7 @@ public class Clase3 {
 
   
     public static void main(String[] args) {
-        Personal persona = new Personal("Regulo", "Lun", 64);
+        Personal persona = new Personal("Regulo", "Luna", 64);
         persona.setSueldo(250000);
         Personal administrativo = new Personal("Juan", "Perez", 48);
         administrativo.setSueldo(80000);

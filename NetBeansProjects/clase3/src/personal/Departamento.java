@@ -12,7 +12,7 @@ public class Departamento extends Personal {
         this.depto = depto;
     }
     
-        public String MostrarDatos(){
+public String MostrarDatos(){
             return "Nombre: " + nombre + "\nApellido: " + apellido + "\nEdad: " + edad + "\nSueldo: " + this.getSueldo() + "\nPertenece al dpto de: " + depto ;
             
         }
