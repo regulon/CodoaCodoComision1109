@@ -20,7 +20,7 @@ public class Clase2Java {
         String password = scanner.nextLine();
                 
         if("Regulo".equals(nombre)){
-            System.out.println("Bienvenido + nombre");      
+            System.out.println("Bienvenido " + nombre);      
         }else{
             
         }

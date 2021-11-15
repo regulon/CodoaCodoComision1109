@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>dataBase</name>
+	<name>baseDeDatos</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1636685276012</id>
+			<id>1636852327159</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
