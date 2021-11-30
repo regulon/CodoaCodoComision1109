@@ -16,7 +16,13 @@
         <h1 class="text-center">Agregar Alumnos</h1>
         <div class = "container">
             <div class =" row">
+                
                 <form class="p-5" action="AlumnosController?accion-insert" method ="post">
+                    
+                    <div class ="mb-3">
+                        <label for="id" class="form-label"></label>
+                        <input type="hidden" class="form-control" id="id"/>
+                    </div>
                     <div class ="mb-3">
                         <label for="nombre" class="form-label">nombre</label>
                         <input type="text" class="form-control" id="nombre" name="nombre"/>
