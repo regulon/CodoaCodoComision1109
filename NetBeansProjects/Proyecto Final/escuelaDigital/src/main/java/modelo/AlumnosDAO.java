@@ -62,5 +62,53 @@ public class AlumnosDAO {
             return null;
         }
     }
+    public boolean insertarAlumno(Alumnos alumno){
+        PreparedStatement ps;
+        try {
+            ps = conexion.prepareStatement("INSERT INTO participantes(nombre, apellido, email, telefono) VALUES(?,?,?,?)");
+            ps.setString(1,alumno.getNombre());
+            ps.setString(2,alumno.getApellido());
+            ps.setString(3,alumno.getEmail());
+            ps.setString(4,alumno.getTelefono());
+            ps.execute();
+            return true;
+        } catch (SQLException e) {
+            System.out.println(e.toString());
+            return false;
+            
+        }
     
+    
+    }
+    public boolean actualizarAlumno(Alumnos alumno){
+        PreparedStatement ps;
+        try {
+            ps = conexion.prepareStatement("UPDATE participantes SET nombre=?, apellido=?, email=?, telefono=?) WHERE id=?");
+            ps.setString(1,alumno.getNombre());
+            ps.setString(2,alumno.getApellido());
+            ps.setString(3,alumno.getEmail());
+            ps.setString(4,alumno.getTelefono());
+            ps.setInt(5, alumno.getId());
+            ps.execute();
+            return true;
+        } catch (SQLException e) {
+            System.out.println(e.toString());
+            return false;
+            
+        }
+    }
+    public boolean eliminarAlumno(int _id){
+    PreparedStatement ps;
+        try {
+            ps = conexion.prepareStatement("DELETE FROM participantes WHERE id=?");
+
+            ps.setInt(1,_id);
+            ps.execute();
+            return true;
+        } catch (SQLException e) {
+            System.out.println(e.toString());
+            return false;
+            
+        }
+    }
 }
