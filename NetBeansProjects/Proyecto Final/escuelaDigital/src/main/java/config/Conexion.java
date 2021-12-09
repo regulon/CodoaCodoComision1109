@@ -10,13 +10,13 @@ public class Conexion {
         try {
             Class.forName(driver);
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/comision1109",
-            "reguloluna", "4554");
+            "root", "");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e.toString());
         }
             return conexion;
     }
-    /*public static void main(String[] args) throws SQLException{
+    public static void main(String[] args) throws SQLException{
         Connection c = null;
         Conexion con = new Conexion();
         c = con.getConnection();
@@ -28,13 +28,13 @@ public class Conexion {
         
         while(rs.next()){
             int id = rs.getInt("id");
-            String nombre = rs.getString("nombre");
-            String apellido = rs.getString("apellido");
+            String nombre = rs.getString("nombres");
+            String apellido = rs.getString("apellidos");
             String email = rs.getString("email");
             String telefono = rs.getString("telefono");
             
             System.out.println("Id: " + id + " Nombre: " + nombre + " Apellido: " + apellido + " Email: " + email + " Teléfono: " + telefono);
         }
-    }*/
+    }
     
 }

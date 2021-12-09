@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>escuelaDigital</artifactId>
+    <artifactId>unaInmobiliaria</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>escuelaDigital</name>
+    <name>unaInmobiliaria</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -21,23 +21,18 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.27</version>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-            <scope>runtime</scope>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.0.0</version>
+          <type>maven-plugin</type>
         </dependency>
-
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-  	</dependency>
     </dependencies>
 
     <build>
@@ -45,7 +40,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.1</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
@@ -54,7 +49,6 @@
                     </compilerArguments>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -66,7 +60,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>2.6</version>
                 <executions>
                     <execution>
                         <phase>validate</phase>
@@ -88,34 +82,6 @@
                     </execution>
                 </executions>
             </plugin>
-           <plugin>
-            <groupId>org.apache.openejb.maven</groupId>
-            <artifactId>tomee-maven-plugin</artifactId>
-            <version>1.7.1</version>
-            <configuration>
-              <tomeeVersion>1.7.1</tomeeVersion>
-              <tomeeClassifier>plus</tomeeClassifier>
-              <debug>false</debug>
-              <debugPort>5005</debugPort>
-              <args>-Dfoo=bar</args>
-              <config>${project.basedir}/src/test/tomee/conf</config>
-              <libs>
-                <lib>mysql:mysql-connector-java:5.1.20</lib>
-              </libs>
-              <webapps>
-                 <webapp>org.superbiz:myapp:4.3?name=ROOT</webapp>
-                 <webapp>org.superbiz:api:1.1</webapp>
-              </webapps>
-              <apps>
-                  <app>org.superbiz:mybugapp:3.2:ear</app>
-              </apps>
-              <libs>
-                  <lib>mysql:mysql-connector-java:5.1.21</lib>
-                  <lib>unzip:org.superbiz:hibernate-bundle:4.1.0.Final:zip</lib>
-                  <lib>remove:openjpa-</lib>
-              </libs>
-            </configuration>
-          </plugin>
         </plugins>
     </build>
 

@@ -12,11 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import modelo.AlumnosDAO;
 
 
-@WebServlet(name = "AlumnosControler", urlPatterns = {"/AlumnosControler"})
-public class AlumnosControler extends HttpServlet {
-
-
-    
+@WebServlet(name = "AlumnosController", urlPatterns = {"/AlumnosController"})
+public class AlumnosController extends HttpServlet {
 
 
     @Override
@@ -24,21 +21,21 @@ public class AlumnosControler extends HttpServlet {
             throws ServletException, IOException {
             AlumnosDAO alum = new AlumnosDAO();
             String accion;
-            RequestDispatcher dispatcher= null;
+            RequestDispatcher dispatcher = null;
             accion = request.getParameter("accion");
             if(accion == null || accion.isEmpty()){
-                dispatcher = request.getRequestDispatcher("vistas/alumnos.jsp");
+                dispatcher =request.getRequestDispatcher("vistas/alumnos.jsp");
+            }else if(accion.equals("modificar")){
+            dispatcher =request.getRequestDispatcher("vistas/modificar.jsp");
             }
-            dispatcher.forward(request, response);
+            dispatcher.forward(request, response);   
     }
-
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             doGet(request, response);
     }
-
 
     @Override
     public String getServletInfo() {

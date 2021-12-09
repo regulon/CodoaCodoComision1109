@@ -24,8 +24,8 @@ public class AlumnosDAO {
 
             while (rs.next()) {
                 int id = rs.getInt("id");
-                String nombre = rs.getString("nombre");
-                String apellido = rs.getString("apellido");
+                String nombre = rs.getString("nombres");
+                String apellido = rs.getString("apellidos");
                 String email = rs.getString("email");
                 String telefono = rs.getString("telefono");
                 Alumnos alumnos = new Alumnos(id, nombre, apellido, email, telefono);
@@ -44,14 +44,14 @@ public class AlumnosDAO {
        Alumnos alumno = null;
        
         try {
-            ps = conexion.prepareStatement("SELECT id, nombre, apellido, email, telefono * FROM participantes WHERE id = ?");
+            ps = conexion.prepareStatement("SELECT id, nombres, apellidos, email, telefono * FROM participantes WHERE id = ?");
             ps.setInt(1, _id);
             rs = ps.executeQuery();
             
             while (rs.next()) {
                 int id = rs.getInt("id");
-                String nombre = rs.getString("nombre");
-                String apellido = rs.getString("apellido");
+                String nombre = rs.getString("nombres");
+                String apellido = rs.getString("apellidos");
                 String email = rs.getString("email");
                 String telefono = rs.getString("telefono");
                 alumno = new Alumnos (id, nombre, apellido, email, telefono);
