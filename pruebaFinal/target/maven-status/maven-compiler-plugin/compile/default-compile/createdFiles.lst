@@ -1,0 +1,12 @@
+modelo\Propietario.class
+controller\InmuebleController.class
+dao\Validar.class
+controller\UsuarioController.class
+dao\InmuebleDAO.class
+modelo\Inmueble.class
+conexion\Conectar.class
+controller\PropietarioController.class
+dao\UsuarioDAO.class
+conexion\Conexion.class
+modelo\Usuario.class
+dao\PropietarioDAO.class

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+   padding: 0
+}
+#segmento1{
+
+    font-family: 'Mystery Quest', cursive;
+    font-size: larger;
+    font-weight: bolder
+
+}
+#segmento2{
+
+    font-family: 'Grand Hotel', cursive;
+    font-size: larger
+}
+#segmento3{
+
+    font-family: 'Vujahday Script', cursive;
+    font-size: larger;
+    font-weight: 600
+
+}
+#segmento1, #segmento2{
+
+    position: relative;
+    top: 10px
+}
+span, #negrita{
+
+    font-weight: 700
+
+}
+
+header{
+
+    background: linear-gradient(to bottom, rgba(252, 187, 120, 0.2), white);
+
+}
+thead{
+
+    background: linear-gradient(to top, rgba(252, 187, 120, 0.2), white);
+
+}
+tbody{
+
+    background-color: rgb(252, 209, 120)
+
+}
+.ancho{
+
+    width: 150px;
+    height: 35px;
+    text-align: center
+
+}
+.ancho1{
+
+    width: 100px;
+    height: 35px;
+    text-align: center
+
+}
+.ancho2{
+
+    width: 80px;
+    height: 35px;
+    text-align: center
+
+}
+.ancho3{
+
+    width: 60px;
+    height: 35px;
+    text-align: center
+
+}
+.ancho4{
+
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle
+
+}
+.ancho5{
+
+    width: 150px;
+    height: 40px
+
+}
+.ancho6{
+
+    width: 100px;
+    height: 40px
+
+}
+.ancho7{
+
+    width: 50px;
+    height: 40px;
+    line-height: 5px
+}
+.ancho8{
+
+    width: 50px;
+    height: 40px
+
+}
+.ancho9{
+
+    width: 300px;
+    height: 240px
+
+}

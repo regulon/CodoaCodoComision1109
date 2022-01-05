@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+   padding: 0
+}
+#segmento1{
+
+    font-family: 'Mystery Quest', cursive;
+    font-size: larger;
+    font-weight: bolder
+
+}
+#segmento2{
+
+    font-family: 'Grand Hotel', cursive;
+    font-size: larger
+}
+#segmento3{
+
+    font-family: 'Vujahday Script', cursive;
+    font-size: larger;
+    font-weight: 600
+
+}
+#segmento1, #segmento2{
+
+    position: relative;
+    top: 10px
+}
+span, #negrita{
+
+    font-weight: 700
+
+}
+header{
+
+    background: linear-gradient(to bottom, rgba(252, 187, 120, 0.2), white);
+
+}
+thead{
+
+    background: linear-gradient(to top, rgba(252, 187, 120, 0.2), white);
+
+}
+span#estilo1{
+    
+    color: white
+    
+}
+a#alter{
+    
+    color: gainsboro
+}
+.dropdown-menu{
+    
+    font-size: large
+    
+}
+a.ex2{
+    
+    font-size: xx-large;
+
+    
+}
+a.ex2:hover, a.ex2:active {color: red}
+form{
+    
+    background-color: rgb(244, 243, 255);
+    padding: 25px;
+    border-radius: 10px
+}

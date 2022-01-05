@@ -1,0 +1,47 @@
+#segmento1{
+
+    font-family: 'Mystery Quest', cursive;
+    font-size: larger;
+    font-weight: bolder
+
+}
+#segmento2{
+
+    font-family: 'Grand Hotel', cursive;
+    font-size: larger
+}
+#segmento3{
+
+    font-family: 'Vujahday Script', cursive;
+    font-size: larger;
+    font-weight: 600
+
+}
+#segmento1, #segmento2{
+
+    position: relative;
+    top: 10px
+}
+span, #negrita{
+
+    font-weight: 700
+
+}
+
+header{
+
+    background: linear-gradient(to bottom, rgba(252, 187, 120, 0.2), white);
+
+}
+thead{
+
+    background: linear-gradient(to top, rgba(252, 187, 120, 0.2), white);
+
+}
+tbody{
+
+    background-color: rgb(252, 209, 120)
+
+}
+
+
